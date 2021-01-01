@@ -1,0 +1,630 @@
+@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list
+{
+    background: #fff url('./ajax-loader.gif') center center no-repeat;
+}
+
+/* Icons */
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('./fonts/slick.eot');
+    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
+}
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    border: none;
+    outline: none;
+
+
+    border-radius: 20px;
+    background-color: transparent;
+
+}
+
+/* not imp */
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: transparent;
+    outline: none;
+    background: lightgray;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+
+    opacity: .75;
+    color: #019D90;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev
+{
+    /*left: 40%;*/
+	right: 10%;
+    top: 370px;
+	display: block;
+}
+[dir='rtl'] .slick-prev
+{
+    right: 25px;
+    left: auto;
+}
+.slick-prev:before
+{
+	font-weight:bold;
+    content: '<';   /*----------------------------------------  Arrow*/
+}
+[dir='rtl'] .slick-prev:before
+{
+	font-weight:bold;
+    content: '>';
+}
+
+.slick-next
+{
+    /*right: 40%;*/
+	right: 3%;
+    top: 370px;
+	display: block;
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: 25px;
+}
+.slick-next:before
+{
+	font-weight:bold;
+    content: '>';   /*----------------------------------------  Arrow*/
+}
+[dir='rtl'] .slick-next:before
+{
+	font-weight:bold;
+    content: '<';
+}
+
+/* Dots */
+.slick-dotted.slick-slider
+{
+    margin-bottom: 30px;
+}
+
+.slick-dots
+{
+    position: absolute;
+    bottom: 5px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: auto;
+
+    list-style: none;
+
+    text-align: center;
+	background-color: transparent;
+	padding: 5px;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 10px;
+    height: 10px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+	transform: translate(-50%, -50%);
+	
+    width: 6px;
+    height: 6px;
+	/*border: 2px solid red;/*#ffffff00*/
+
+	border-radius: 10px;
+	background-color: white;
+    content: '.';
+    text-align: center;
+
+    opacity: 1;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+	width: 10px;
+    height: 10px;
+    opacity: 1;
+    color: black;
+}
+
+
+/* home design*/
+
+.hdesign_pg1 .slick-next{
+	position: absolute;
+	right: 5%;
+    top: 102vh;
+	display: block;	
+	-webkit-transform: translate(0, 0%);
+    -ms-transform: translate(0, 0%);
+    transform: translate(0, 0%);
+	background-color: transparent;
+}
+.hdesign_pg1 .slick-prev{
+	right: 8%;
+    top: 102vh;
+	display: block;
+	-webkit-transform: translate(0, 0%);
+    -ms-transform: translate(0, 0%);
+    transform: translate(0, 0%);
+	background-color: transparent;
+}
+.hdesign_pg1  .slick-prev:before,.slick-next:before
+{
+    color: #019D90;
+}
+
+
+
+.hdesign_pg1 .slick-dots
+{
+    position: absolute;
+    bottom: 32px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: auto;
+    list-style: none;
+    text-align: center;
+	background-color: transparent;
+	padding: 5px;
+}
+.hdesign_pg1 .slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+	transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+	/*border: 2px solid red;/*#ffffff00*/
+	border-radius: 20px;
+	background-color: white;
+    content: '.';
+    text-align: center;
+    opacity: 1;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.hdesign_pg1 .slick-dots li.slick-active button:before
+{
+	width: 15px;
+    height: 15px;
+	border-radius: 20px;
+    opacity: 1;
+    color: black;
+}
+
+/* Home Slides */
+.area .slick-prev{
+	left: 17%;
+    top: 560px;
+	display: block;
+	background-color: #019d901e;
+}
+.area .slick-next
+{
+    /*right: 40%;*/
+	left: 25%;
+    top: 560px;
+	display: block;
+	background-color: #019d901e;
+}
+.area .slick-prev:hover{
+	background-color: #989b9b7e;
+}
+.area .slick-next:hover{
+	background-color: #989b9b7e;
+}
+
+
+/***/
+.hdesign_pg3 .slick-prev
+{
+    /*left: 40%;*/
+	right: 9.5%;
+    top: 560px;
+	display: block;
+}
+.hdesign_pg3 .slick-next
+{
+    /*right: 40%;*/
+	right: 5%;
+    top: 560px;
+	display: block;
+}
+
+
+
+.hdesign_pg3 .for_sale_card .slick-prev{
+	position: absolute;
+	right: 40px;
+    top: 360px;
+	display: block;
+	
+	background-color: transparent;
+}
+.hdesign_pg3 .for_sale_card .slick-next{
+	position: absolute;
+	right: 0px;
+    top: 360px;
+	display: block;
+	
+	background-color: transparent;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1200px){
+	
+	/* Home Slides */
+	.area .slick-prev{
+		/*left: 23%;*/
+		left: 150px;
+	}
+	.area .slick-next
+	{
+		/*right: 40%;*/
+		left: 33%;
+		left: 200px;
+	}
+	
+	/*home design*/
+	.slick-prev
+	{
+		/*left: 40%;*/
+		right: 12%;
+		top: 330px;
+	}
+	.slick-next
+	{
+		/*right: 40%;*/
+		right: 3%;
+		top: 330px;
+	}
+	
+	/* house design*/
+	.hdesign_pg1 .slick-next{
+		position: absolute;
+		right: 50px;
+		top: 730px;
+		display: block;	
+		-webkit-transform: translate(0, 0%);
+		-ms-transform: translate(0, 0%);
+		transform: translate(0, 0%);
+		background-color: transparent;
+	}
+	.hdesign_pg1 .slick-prev{
+		right: 100px;
+		top: 730px;
+		display: block;
+		-webkit-transform: translate(0, 0%);
+		-ms-transform: translate(0, 0%);
+		transform: translate(0, 0%);
+		background-color: transparent;
+	}
+}	
+	
+	
+@media only screen and (max-width: 1200px){
+		
+	/* 600px house design*/
+	.hdesign_pg1 .slick-next{
+			position: absolute;
+			right: 40%;
+			top: 280px;
+	}
+	.hdesign_pg1 .slick-prev{
+			left: 40%;
+			top: 280px;
+	}
+	
+	
+	/* 600px */
+	.hdesign_pg3 .slick-prev
+	{
+		left: 40%;
+		top: 550px;
+	}
+	.hdesign_pg3 .slick-next
+	{
+		right: 40%;
+		top: 550px;
+	}
+	
+	/* house design sub/inner */
+	.hdesign_pg3 .for_sale_card .slick-prev{
+		position: absolute;
+		left: 70vw;
+		top: 330px;
+	}
+	.hdesign_pg3 .for_sale_card .slick-next{
+		position: absolute;
+		right: 10vw;
+		top: 330px;
+	}
+		
+}
+
+
+@media only screen and (max-width: 1000px){
+	
+	/* home design */
+	
+	.slick-prev{
+		/*left: 40%;*/
+		right: 15%;
+		top: 220px;
+		display: block;
+	}
+	.slick-next{
+		/*right: 40%;*/
+		right: 3%;
+		top: 220px;
+		display: block;
+	}
+	
+	/* House & Land */
+	.hdesign_pg1 .slick-prev {
+		left: 40%;
+		top: 410px;
+	}
+	.hdesign_pg1 .slick-next {
+		position: absolute;
+		right: 40%;
+		top: 410px;
+	}
+	
+	/*  house design  */
+	/* main */
+	.hdesign_pg3 .slick-prev
+	{
+		left: 40%;
+		top: 440px;
+	}
+	.hdesign_pg3 .slick-next
+	{
+		right: 40%;
+		top: 440px;
+	}
+	/* inner */
+	.hdesign_pg3 .card .for_sale_card .slick-prev {
+		left: 450px;
+		top: 230px;
+	}
+	.hdesign_pg3 .card .for_sale_card .slick-next {
+		right: 5%;
+		top: 230px;
+	}
+	
+	
+}
+
+
+@media only screen and (max-width: 750px){
+	
+	/* home design */
+	.slick-prev{
+		/*left: 40%;*/
+		right: 15%;
+		top: 270px;
+		display: block;
+	}
+	.slick-next{
+		/*right: 40%;*/
+		right: 3%;
+		top: 270px;
+		display: block;
+	}
+	
+	/*  house design  */
+	/* main */
+	.hdesign_pg3 .slick-prev
+	{
+		left: 40%;
+		top: 440px;
+	}
+	.hdesign_pg3 .slick-next
+	{
+		right: 40%;
+		top: 440px;
+	}
+	/* inner */
+	.hdesign_pg3 .card .for_sale_card .slick-prev {
+		position: absolute;
+		left: 450px;
+		top: 290px;
+	}
+	.hdesign_pg3 .card .for_sale_card .slick-next {
+		right: 50px;
+		top: 290px;
+	}
+	
+}
+
+
+@media only screen and (max-width: 600px){
+	
+	/*  house design  */
+	/* main */
+	.hdesign_pg3 .slick-prev
+	{
+		left: 40%;
+		top: 450px;
+	}
+	.hdesign_pg3 .slick-next
+	{
+		right: 40%;
+		top: 450px;
+	}
+	/* iner */
+	.hdesign_pg3 .card .for_sale_card .slick-prev {
+		left: 70%;
+		top: 260px;
+	}
+	.hdesign_pg3 .card .for_sale_card .slick-next {
+		left: 80%;
+		top: 260px;
+	}
+	
+	
+	/* home design */
+	.slick-prev{
+		/*left: 40%;*/
+		right: 15%;
+		top: 260px;
+		display: block;
+	}
+	.slick-next{
+		/*right: 40%;*/
+		right: 3%;
+		top: 260px;
+		display: block;
+	}
+	
+	/* House & Land */
+	.hdesign_pg1 .slick-prev {
+		left: 40%;
+		top: 280px;
+	}
+	.hdesign_pg1 .slick-next {
+		position: absolute;
+		right: 40%;
+		top: 280px;
+	}
+}
+
+
+
+
+@media only screen and (max-width: 350px){
+
+	/*  house design  */
+	/* main */
+	.hdesign_pg3 .slick-prev
+	{
+		left: 30%;
+		top: 465px;
+	}
+	.hdesign_pg3 .slick-next
+	{
+		right: 30%;
+		top: 465px;
+	}
+	/* inner */
+	.hdesign_pg3 .card .for_sale_card .slick-prev {
+		left: 65vw;
+		top: 290px;
+	}
+	.hdesign_pg3 .card .for_sale_card .slick-next {
+		right: 10vw;
+		top: 290px;
+	}
+	
+}
